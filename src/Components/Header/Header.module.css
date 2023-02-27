@@ -72,10 +72,12 @@ h5{
 @media (max-width:640px) {
     h1{
         font-size: 25px !important;
+        width: 100% !important;
     }
     h5{
         word-spacing: 3px;
         font-size: 17px !important;
+        width: 100%;
     }
 }
 
