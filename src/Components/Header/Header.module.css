@@ -17,13 +17,14 @@
 .cont{
     position: absolute;
     top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
     z-index: 2;
+    width: 100%;
+    text-align: center;
 }
 
 h1{
@@ -72,12 +73,10 @@ h5{
 @media (max-width:640px) {
     h1{
         font-size: 25px !important;
-        width: 100% !important;
     }
     h5{
         word-spacing: 3px;
         font-size: 17px !important;
-        width: 100%;
     }
 }
 
