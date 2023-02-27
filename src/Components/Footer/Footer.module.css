@@ -26,13 +26,19 @@
 
 
 /* /////////////////////////////////////////////// */
-
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 @media (max-width: 800px) {
     .foot{
         flex-direction: column !important;
+        align-items: center !important;
     }
 
     .foot p:first-of-type {
         margin-bottom: 15px !important;
+        text-align: center !important;
     }
 }
