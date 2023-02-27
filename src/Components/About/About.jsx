@@ -6,6 +6,7 @@ export default function About() {
   return (
     <>
         <div className="container mt-5 px-5">
+            <h2 className={`${style.about1} my-5 py-3`}>About Me</h2>
             <div className={`${style.cont} row p-5`}>
                 <div className="col-lg-6 mb-5">
                     <div className="left">
@@ -79,7 +80,7 @@ export default function About() {
                 </div>
                 <div className="col-lg-6">
                     <div className="right">
-                        <h3 className={`${style.about} mb-3 fw-bold text-uppercase`}>about me</h3>
+                        <h3 className={`${style.about} mb-3 fw-bold text-uppercase`}>information</h3>
                         <div className='mb-4 pb-1'></div>
                         <p className='text-muted'>My name is Mohamed Gamal, and I work as a front-end developer for three years. I have three years of experience in this field,  I also worked as an <span className='fw-bold text-dark'>assistant teacher</span> for front-end development courses.</p>
                         <p className='text-muted'>Then I worked for <span className='fw-bold text-dark'>Huawei as a software engineer</span>  for a while, and then after that I entered the world of freelancing. I have many Of my own projects and I also have clients' projects</p>

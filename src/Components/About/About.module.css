@@ -113,3 +113,62 @@
 .cont p{
     line-height: 1.7;
 }
+
+
+/* //////////////////////////////////////// */
+
+.about1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    position: relative;
+    z-index: 1;
+}
+
+.about1::after{
+   position: absolute;
+   content: "ABOUT ME";
+   top: 50%;
+   width:100%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   z-index: -1;
+   font-size: 90px;
+   color: #ccc;
+   opacity: .7;
+}
+
+@media (max-width : 1200px) {
+    .about1{
+        font-size: 40px;
+    }
+    
+    .about1::after{
+       font-size: 80px;
+    }  
+}
+
+@media (max-width : 990px) {
+    .about1{
+        font-size: 35px;
+    }
+    
+    .about1::after{
+       font-size: 70px;
+    }  
+}
+
+@media (max-width : 796px) {
+    .about1{
+        font-size: 30px;
+    }
+    
+    .about1::after{
+       font-size: 60px;
+    }  
+}
