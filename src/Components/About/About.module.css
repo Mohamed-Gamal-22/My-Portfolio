@@ -172,3 +172,13 @@
        font-size: 60px;
     }  
 }
+
+@media (max-width : 500px) {
+    .about1{
+        font-size: 25px;
+    }
+    
+    .about1::after{
+       font-size: 45px;
+    }  
+}

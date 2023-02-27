@@ -54,6 +54,16 @@
     }  
 }
 
+@media (max-width : 500px) {
+    .our{
+        font-size: 25px;
+    }
+    
+    .our::after{
+       font-size: 45px;
+    }  
+}
+
 .card {
     /* border: 5px solid #212529 !important; */
     border-radius: 7px !important;
