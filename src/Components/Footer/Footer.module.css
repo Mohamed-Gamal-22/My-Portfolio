@@ -26,3 +26,13 @@
 
 
 /* /////////////////////////////////////////////// */
+
+@media (max-width: 800px) {
+    .foot{
+        flex-direction: column !important;
+    }
+
+    .foot p:first-of-type {
+        margin-bottom: 15px !important;
+    }
+}
