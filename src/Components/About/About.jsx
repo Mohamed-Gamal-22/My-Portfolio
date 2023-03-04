@@ -10,7 +10,7 @@ export default function About() {
             <div className={`${style.cont} row p-5`}>
                 <div className="col-lg-6 mb-5">
                     <div className="left">
-                        <div className="skills pe-5">
+                        <div className="skills pe-2">
                             <h3 className='mt-4 mb-3 text-uppercase fw-bold text-dark'>my skills</h3>
                             <div className="skill mb-3">
                                 <div className={`${style.rate1} mb-1`}>
