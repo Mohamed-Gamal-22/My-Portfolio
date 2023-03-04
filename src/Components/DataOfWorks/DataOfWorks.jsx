@@ -2,16 +2,24 @@ import React, { useState } from 'react';
 import style from "./DataOfWorks.module.css";
 import Works from './../Works/Works';
 import buildingImg from "../../Images/building.png";
+import angoraImg from "../../Images/angora.png";
 
 export default function DataOfWorks() {
     const [allWorks] = useState([
         {
-            id : 0,
-            title: "Building site", 
-            usedTech: ["html", "html5", "css", "css3", "bootstrap",         "font-awesome", "google-fonts"],
-            img : buildingImg,
-            url : "https://building-project.vercel.app/" 
+          id : 0,
+          title: "Building Site", 
+          usedTech: ["html", "html5", "css", "css3", "bootstrap4", "font-awesome", "google-fonts", "media query"],
+          img : buildingImg,
+          url : "https://building-project-mohamed-gamal-22.vercel.app/" 
         },
+        {
+          id : 1,
+          title : "Angora Page",
+          usedTech : ["html", "css", "html5", "css3", "fontawesome", "media-query", "bootstrap5"],
+          img : angoraImg,
+          url : "https://angora-page-mohamed-gamal-22.vercel.app/"
+        }
     ])
     
   return (
