@@ -1,87 +1,23 @@
 import React from 'react';
 import style from "./Works.module.css";
-import img from "../../Images/kelly-sikkema-4JxV3Gs42Ks-unsplash.jpg";
 
-export default function Works() {
+export default function Works({mywork}) {
   return (
     <>
-    <div className="container mt-5 py-5">
-      <h2 className={`${style.our} `}>our works</h2>
-      <div className="row g-3 my-5 py-4">
-        <div className="col-lg-3 col-md-4 col-sm-6">
-          <div className="item">
-            <div class={`card ${style.card}`}>
-              <img src={img} class="card-img-top" alt="img" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div className="btn btn-danger">view page</div>
-              </div>
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div className={`item ${style.scale}`}>
+          <div className={`card ${style.card}`}>
+            <div className={`${style.imgcontainer}`}>
+              <img src={mywork.img} className={`card-img-top ${style.topimg}`} alt="img" />
             </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6">
-          <div className="item">
-            <div class={`card ${style.card}`}>
-              <img src={img} class="card-img-top" alt="img" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div className="btn btn-danger">view page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6">
-          <div className="item">
-            <div class={`card ${style.card}`}>
-              <img src={img} class="card-img-top" alt="img" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div className="btn btn-danger">view page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6">
-          <div className="item">
-            <div class={`card ${style.card}`}>
-              <img src={img} class="card-img-top" alt="img" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div className="btn btn-danger">view page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6">
-          <div className="item">
-            <div class={`card ${style.card}`}>
-              <img src={img} class="card-img-top" alt="img" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div className="btn btn-danger">view page</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-6">
-          <div className="item">
-            <div class={`card ${style.card}`}>
-              <img src={img} class="card-img-top" alt="img" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div className="btn btn-danger">view page</div>
-              </div>
+            <div className="card-body">
+              <h5 className="card-title">{mywork.title}</h5>
+              <div className="card-text"><span className='text-danger fw-bold'>used technologies : </span> <ul className='d-flex flex-wrap my-1 list-unstyled'>{mywork.usedTech.map((tech, index) => <li className='mx-2' key={index}>{tech}</li>)}</ul></div>
+              <div className="btn btn-danger mt-2"><a className='text-decoration-none text-white' rel="noreferrer" href={mywork.url} target="_blank">view page</a></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </>
   )
 }

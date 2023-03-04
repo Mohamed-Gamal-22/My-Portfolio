@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import SocialMedia from "../SocialMedia/SocialMedia";
 import Header from './../Header/Header';
 import Footer from './../Footer/Footer';
-import Works from "../Works/Works";
+import DataOfWorks from './../DataOfWorks/DataOfWorks';
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <About />
       <SocialMedia />
-      <Works />
+      <DataOfWorks />
       <Footer />
     </>
   );

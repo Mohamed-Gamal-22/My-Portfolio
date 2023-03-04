@@ -1,0 +1,84 @@
+.our{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    position: relative;
+    z-index: 1;
+}
+
+.our::after{
+   position: absolute;
+   content: "OUR WORKS";
+   top: 50%;
+   width:100%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   z-index: -1;
+   font-size: 90px;
+   color: #ccc;
+   opacity: .7;
+}
+
+@media (max-width : 1200px) {
+    .our{
+        font-size: 40px;
+    }
+    
+    .our::after{
+       font-size: 80px;
+    }  
+}
+
+@media (max-width : 990px) {
+    .our{
+        font-size: 35px;
+    }
+    
+    .our::after{
+       font-size: 70px;
+    }  
+}
+
+@media (max-width : 796px) {
+    .our{
+        font-size: 30px;
+    }
+    
+    .our::after{
+       font-size: 60px;
+    }  
+}
+
+@media (max-width : 500px) {
+    .our{
+        font-size: 25px;
+    }
+    
+    .our::after{
+       font-size: 45px;
+    }  
+}
+
+.card {
+    /* border: 5px solid #212529 !important; */
+    border-radius: 7px !important;
+    -webkit-border-radius: 7px !important;
+    -moz-border-radius: 7px !important;
+    -ms-border-radius: 7px !important;
+    -o-border-radius: 7px !important;
+    padding: 3px;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 7px #8d8b8b, -3px -3px 7px #8d8b8b;
+}
